@@ -1,1 +1,34 @@
-<p>chips-component</p>
+<checkbox class="container" (click)="onButtonClick()" [ngClass]="{ active: isActive }">
+  @switch (chips) { @case ("Family") {
+  <img class="img" src="/assets/emoji/family.svg" height="32" width="32" alt="family" />
+  } @case ("Education") {
+  <img class="img" src="/assets/emoji/book.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Dining") {
+  <img class="img" src="/assets/emoji/diner.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Promotions") {
+  <img class="img" src="/assets/emoji/chart.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Office") {
+  <img class="img" src="/assets/emoji/briefcase.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Attractions") {
+  <img class="img" src="/assets/emoji/building.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Health") {
+  <img class="img" src="/assets/emoji/bug.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Sports") {
+  <img class="img" src="/assets/emoji/hoop.svg" height="24" width="24" alt="navigate to previous page" />
+  } @case ("Travel") {
+  <img class="img" src="/assets/emoji/airplane.svg" height="24" width="24" alt="navigate to previous page" />
+  } }
+  <p>
+    {{ chips | titlecase }}
+  </p>
+  <div>
+    @if(isActive) {
+    <img class="svg" src="/assets/icons/close.svg" height="16" width="16" alt="navigate to previous page" />
+
+    } @else {
+
+    <img class="svg" src="/assets/icons/plus.svg" height="16" width="16" alt="navigate to previous page" />
+
+    }
+  </div>
+</checkbox>
